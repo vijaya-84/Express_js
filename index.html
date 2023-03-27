@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+           body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+/* Center and scale the image nicely */
+ 
+  background-image: url("https://techpp.com/wp-content/uploads/2022/02/Whatsapp-images-not-showing-in-gallery.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+  form{
+    position: absolute;
+  top:10px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin:auto;
+  max-width: 360px;
+  max-height: 340px;
+ padding:16px;
+ background-color: white;
+    border-radius: 1.95rem;
+  }
+  input{
+    width: 70%;
+  padding: 15px;
+  margin: 35px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  }
+   button{
+    width: 70%;
+    padding: 11px;
+    background-color: blue;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 1.95rem;
+   }
+        </style>
+    </head>
+    <body>
+        
+        <form   action="/processing"  method="POST">
+            <label>
+                username
+                <input type="text" placeholder="username"  name="username">
+            </label><br>
+            <label>
+                password
+                <input type="password" placeholder="your password" name="password">
+            </label><br>
+            <button>submit</button>
+        </form>
+    </body>
+</html>
